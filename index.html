@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Birthday Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Seite 0: Start -->
+        <div class="seite" id="seite0">
+            <h1>Alles Gute zum Geburtstag❤️</h1>
+            <div class="center">
+                <button id="startBtn" class="number-box">1</button>
+            </div>
+        </div>
+
+        <!-- Seite 1: Zahlen -->
+        <div class="seite" id="seite1" style="display:none;">
+            <h2>Frage Papa nach 3 Zahlen!</h2>
+            <div class="center">
+                <input type="text" id="zahlenInput" maxlength="3" placeholder="3 Zahlen eingeben">
+                <button id="zahlenSubmit">Bestätigen</button>
+            </div>
+            <div id="zahlenResult" class="result"></div>
+        </div>
+
+        <!-- Seite 2: Eis -->
+        <div class="seite" id="seite2" style="display:none;">
+            <h2>Finde das versteckte Becher Eis was sich im Kühlschrank [HWR] befindet. Welchen Geschmack besitzt es?</h2>
+            <div class="center">
+                <input type="text" id="eisInput" placeholder="Geschmack eingeben">
+                <button id="eisSubmit">Bestätigen</button>
+            </div>
+            <div id="eisResult" class="result"></div>
+        </div>
+
+        <!-- Seite 3: Finale Aufgabe -->
+        <div class="seite" id="seite3" style="display:none;">
+            <h2><em>Finale Aufgabe:</em><br>Gewinne ein Spiel</h2>
+            <div class="center">
+                <button id="finalSubmit">Bestätigen</button>
+            </div>
+            <div id="finalResult" class="result"></div>
+        </div>
+
+        <!-- Seite 4: Ende -->
+        <div class="seite" id="seite4" style="display:none;">
+            <h2>Ende</h2>
+            <div class="center">
+                <div id="lettersDisplay" class="final-letters"></div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
